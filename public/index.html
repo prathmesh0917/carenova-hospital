@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard" data-title="Dashboard">
+  <main id="content">
+    <!-- 4 stat cards (numbers are filled in by dashboard.js from /api/dashboard) -->
+    <div class="grid grid-4">
+      <div class="card stat"><div class="stat-icon" style="background:#E6F4F1;color:#0F766E"><i data-lucide="users"></i></div><div><div class="stat-num" id="s-patients">-</div><div class="stat-label">Total Patients</div></div></div>
+      <div class="card stat"><div class="stat-icon" style="background:#E0F2FE;color:#0369A1"><i data-lucide="stethoscope"></i></div><div><div class="stat-num" id="s-doctors">-</div><div class="stat-label">Total Doctors</div></div></div>
+      <div class="card stat"><div class="stat-icon" style="background:#FEF3C7;color:#B45309"><i data-lucide="calendar-days"></i></div><div><div class="stat-num" id="s-today">-</div><div class="stat-label">Today's Appointments</div></div></div>
+      <div class="card stat"><div class="stat-icon" style="background:#DCFCE7;color:#166534"><i data-lucide="clipboard-check"></i></div><div><div class="stat-num" id="s-completed">-</div><div class="stat-label">Completed This Month</div></div></div>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card"><div class="card-head"><h3>Appointments, last 7 days</h3></div><div class="chart-box"><canvas id="trend-chart"></canvas></div></div>
+      <div class="card"><div class="card-head"><h3>Status split</h3></div><div class="chart-box"><canvas id="status-chart"></canvas></div></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h3>Today's appointments</h3><a class="btn btn-secondary btn-sm" href="appointments.html">View all</a></div>
+      <div class="table-wrap" id="today-table"></div>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

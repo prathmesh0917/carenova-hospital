@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doctors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="doctors" data-title="Doctors">
+  <main id="content">
+    <div class="page-head">
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Search doctor name" aria-label="Search doctors">
+        <select id="dept-filter" aria-label="Filter by department"><option value="">All departments</option></select>
+      </div>
+      <div class="spacer"></div>
+      <button class="btn btn-primary" id="add-btn"><i data-lucide="plus"></i> Add Doctor</button>
+    </div>
+    <div id="grid" class="doctor-grid"></div>
+  </main>
+
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/doctors.js"></script>
+</body>
+</html>

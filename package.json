@@ -1,0 +1,24 @@
+{
+  "name": "carenova-hospital",
+  "version": "1.0.0",
+  "description": "CareNova Hospital Management System - ADBMS mini project (MongoDB)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "setup": "node setup/createCollections.js && node setup/createIndexes.js",
+    "seed": "node setup/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^4.22.3",
+    "mongodb": "^7.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

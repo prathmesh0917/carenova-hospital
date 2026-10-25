@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Appointments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="appointments" data-title="Appointments">
+  <main id="content">
+    <div class="page-head">
+      <div class="toolbar">
+        <input id="f-date" type="date" aria-label="Filter by date">
+        <select id="f-status" aria-label="Filter by status">
+          <option value="">All statuses</option>
+          <option>Scheduled</option><option>Completed</option><option>Cancelled</option>
+        </select>
+        <select id="f-doctor" aria-label="Filter by doctor"><option value="">All doctors</option></select>
+        <button class="btn btn-secondary" id="clear-btn">Clear</button>
+      </div>
+      <div class="spacer"></div>
+      <button class="btn btn-primary" id="book-btn"><i data-lucide="plus"></i> Book Appointment</button>
+    </div>
+    <div class="card"><div class="table-wrap" id="table-area"></div></div>
+  </main>
+
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/appointments.js"></script>
+</body>
+</html>
