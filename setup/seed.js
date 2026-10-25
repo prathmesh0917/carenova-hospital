@@ -34,18 +34,14 @@ const departments = [
 // ---------------- doctors (dept, name, specialization, exp, fee, days, status) ----------------
 const D = (dept, name, spec, exp, fee, days, status) => ({ dept, name, spec, exp, fee, days, status: status || "Active" });
 const doctorList = [
-  D("General Medicine", "Dr. Anil Deshmukh", "General Physician", 18, 400, ["Mon", "Tue", "Wed", "Thu", "Fri"]),
-  D("General Medicine", "Dr. Sunita Kulkarni", "Internal Medicine", 12, 500, ["Mon", "Wed", "Fri", "Sat"]),
-  D("Cardiology", "Dr. Rajesh Patil", "Cardiologist", 22, 1000, ["Mon", "Tue", "Thu"]),
-  D("Cardiology", "Dr. Meera Joshi", "Interventional Cardiologist", 15, 900, ["Tue", "Thu", "Sat"]),
-  D("Orthopedics", "Dr. Vikram Shinde", "Orthopedic Surgeon", 20, 800, ["Mon", "Wed", "Fri"]),
-  D("Orthopedics", "Dr. Pooja Bhosale", "Sports Injury Specialist", 8, 600, ["Tue", "Thu", "Sat"], "OnLeave"),
-  D("Pediatrics", "Dr. Neha Gokhale", "Child Specialist", 10, 450, ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]),
-  D("Pediatrics", "Dr. Sameer Pawar", "Neonatologist", 14, 550, ["Mon", "Wed", "Fri"]),
-  D("Neurology", "Dr. Kavita Rao", "Neurologist", 16, 900, ["Tue", "Thu", "Fri"]),
-  D("Neurology", "Dr. Arjun Mehta", "Neuro Physician", 7, 700, ["Mon", "Wed", "Sat"]),
-  D("Dermatology", "Dr. Priya Nair", "Dermatologist", 9, 500, ["Mon", "Tue", "Thu", "Fri"]),
-  D("Dermatology", "Dr. Rohan Chavan", "Cosmetologist", 5, 300, ["Wed", "Fri", "Sat"])
+  D("General Medicine", "Dr. Ajit Hande", "General Physician", 2, 15, ["Mon", "Tue", "Wed", "Thu", "Fri"]),
+  D("General Medicine", "Dr. Param Mavani", "Internal Medicine", 3, 50, ["Mon", "Wed", "Fri", "Sat"]),
+  D("Cardiology", "Dr. Omkar Anna Dhas", "Cardiologist", 3, 51, ["Mon", "Tue", "Thu"]),
+  D("Cardiology", "Dr. Samarth Bugad", "Interventional Cardiologist", 2, 11, ["Tue", "Thu", "Sat"]),
+  D("Orthopedics", "Dr. Vaibhav Missal", "Orthopedic Surgeon", 4, 101, ["Mon", "Wed", "Fri"]),
+  D("Orthopedics", "Dr. Shivshankar Gond", "Sports Injury Specialist", 1, 5, ["Tue", "Thu", "Sat"], "OnLeave"),
+  D("Dermatology", "Dr. Vinod Kolte", "Darmatologist", 2, 99, ["Wed", "Fri", "Sat"])
+  D("Neurology", "Dr. Prathmesh Hanwate", "Neurologist", 20, 2000, ["Wed", "Fri", "Sat"])
 ];
 
 // ---------------- patients ----------------
