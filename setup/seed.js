@@ -40,7 +40,7 @@ const doctorList = [
   D("Cardiology", "Dr. Samarth Bugad", "Interventional Cardiologist", 2, 11, ["Tue", "Thu", "Sat"]),
   D("Orthopedics", "Dr. Vaibhav Missal", "Orthopedic Surgeon", 4, 101, ["Mon", "Wed", "Fri"]),
   D("Orthopedics", "Dr. Shivshankar Gond", "Sports Injury Specialist", 1, 5, ["Tue", "Thu", "Sat"], "OnLeave"),
-  D("Dermatology", "Dr. Vinod Kolte", "Darmatologist", 2, 99, ["Wed", "Fri", "Sat"])
+  D("Dermatology", "Dr. Vinod Kolte", "Darmatologist", 2, 99, ["Wed", "Fri", "Sat"]),
   D("Neurology", "Dr. Prathmesh Hanwate", "Neurologist", 20, 2000, ["Wed", "Fri", "Sat"])
 ];
 
